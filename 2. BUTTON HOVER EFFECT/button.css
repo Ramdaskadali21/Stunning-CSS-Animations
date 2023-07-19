@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+html,body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(20,100,200, 80);
+}
+.button{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease;
+}
+.button:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 30px;
+    background: #e60b83;
+    width: 56px;
+    height: 56px;
+    transition: all .3s ease;
+}
+.button span{
+    position: relative;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+
+}
+.button svg{
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: white;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all .3s ease;
+}
+.button:hover{
+    color:black;
+
+}
+.button:hover:before {width: 100%;
+    background: #1ee9ba;
+
+}
+.button:hover svg{
+    stroke:black;
+    transform: translateX(0);}
+    .button:active {
+        transform: scale(.95);
+
+    }
